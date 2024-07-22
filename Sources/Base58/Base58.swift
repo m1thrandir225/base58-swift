@@ -41,7 +41,7 @@ public enum Base58 {
 			answer.append(alphabet.first!)
 		}
 		
-		answer.reverse()
+		//answer.reverse()
 		
 		return String(bytes: answer, encoding: String.Encoding.utf8)!
 	}
@@ -64,7 +64,7 @@ public enum Base58 {
 			count *= radix
 		}
 		
-		var temp = answer.serialize()
+		let temp = answer.serialize()
 		
 		var numZeroes = 0
 		for char in inputArray {
